@@ -2,7 +2,7 @@
 
 Toy example using Dagster orchestration in conjunction with [llama.cpp](https://github.com/ggerganov/llama.cpp) to achieve a performant and observable data pipeline.
 
-This repo is the supporting material for the blog post: **TBD**
+This repo is the supporting material for the blog post: [Dagster ❤️ Llama - orchestration for modern LLM pipelines](https://buduroiu.com/blog/dagster-llama-data-engineering)
 
 ## Installation
 
