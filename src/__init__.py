@@ -1,8 +1,12 @@
 import os
+
+import dotenv
 from dagster import AssetSelection, Definitions, define_asset_job, load_assets_from_modules, ScheduleDefinition
 
 from src import assets
 from src.resources import LlamaResource
+
+dotenv.load_dotenv()
 
 all_assets = load_assets_from_modules([assets])
 

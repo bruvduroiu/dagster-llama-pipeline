@@ -57,7 +57,8 @@ def topstories_summaries(topstories):
 
     @op
     def _process(topstories_collection):
-        return list(topstories_collection)
+        summaries = list(topstories_collection)
+        return Output(summaries, metadata={"n": len(summaries), "preview": MetadataValue.json(summaries)})
 
     fanned_topstories = _fan_out(topstories)
     topstories_text = fanned_topstories.map(get_paragraph_text)
